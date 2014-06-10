@@ -1,14 +1,14 @@
 [
 	{ 
 		"id":1,
-		"name" : "Pappa e Citti", 
+		"name" : "Pappalandia", 
 		"address" : { 
-			"street" : "Viale Trieste", 
-			"civic": "66", 
+			"street" : "Via del Corso", 
+			"civic": "51", 
 			"city":"Cagliari", 
 			"prov":"CA", 
 			"cap":"09123", 
-			"phone":"070 665770"
+			"phone":"070 123456"
 		},
 		"pro": 3,
 		"cons": 1,
@@ -27,14 +27,14 @@
 	},
 	{ 
 		"id":2,
-		"name" : "Rosso Pomodoro", 
+		"name" : "Rosso Peperone", 
 		"address" : { 
-			"street" : "Via Sassari", 
-			"civic": "11-13", 
+			"street" : "Via Olbia", 
+			"civic": "11-15", 
 			"city":"Cagliari", 
 			"prov":"CA", 
 			"cap":"09124", 
-			"phone":"070 656060"
+			"phone":"070 654321"
 		},
 		"pro": 7,
 		"cons": 2,
@@ -52,14 +52,14 @@
 	},
 	{ 
 		"id":3,
-		"name" : "El Gaucho", 
+		"name" : "El Macho", 
 		"address" : { 
-			"street" : "Via Giorgio Asproni", 
+			"street" : "Via Giorgio Pepperoni", 
 			"civic": "9", 
 			"city":"Cagliari", 
 			"prov":"CA", 
 			"cap":"09123", 
-			"phone":"070 656303"
+			"phone":"070 321654"
 		},
 		"pro": 5,
 		"cons": 3,
@@ -77,13 +77,13 @@
 	},
 	{ 
 		"id":4,
-		"name" : "Old Wild West", 
+		"name" : "Old Old East", 
 		"address" : { 
-			"street" : "Piazza Unione Sarda", 
+			"street" : "Piazza Delle Vettovaglie", 
 			"city":"Cagliari", 
 			"prov":"CA", 
 			"cap":"09122", 
-			"phone":"070 2089054"
+			"phone":"070 654123"
 		},
 		"pro": 3,
 		"cons": 5,

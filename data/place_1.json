@@ -1,13 +1,13 @@
 { 
 	"id":1,
-	"name" : "Pappa e Citti", 
+	"name" : "Pappalandia", 
 	"address" : { 
-		"street" : "Viale Trieste", 
-		"civic": "66", 
+		"street" : "Via del Corso", 
+		"civic": "51", 
 		"city":"Cagliari", 
 		"prov":"CA", 
 		"cap":"09123", 
-		"phone":"070 665770"
+		"phone":"070 123456"
 	},
 	"pro": 3,
 	"cons": 1,
@@ -22,4 +22,5 @@
 		{ "id":2, "text": "Servizio Lento", "count": 0 },
 		{ "id":3, "text": "Servizio Poco Professionale", "count": 1 }
 	]
+	
 }

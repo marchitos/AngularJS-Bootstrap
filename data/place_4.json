@@ -1,12 +1,12 @@
 { 
 	"id":4,
-	"name" : "Old Wild West", 
+	"name" : "Old Old East", 
 	"address" : { 
-		"street" : "Piazza Unione Sarda", 
+		"street" : "Piazza Delle Vettovaglie", 
 		"city":"Cagliari", 
 		"prov":"CA", 
 		"cap":"09122", 
-		"phone":"070 2089054"
+		"phone":"070 654123"
 	},
 	"pro": 3,
 	"cons": 5,
@@ -21,4 +21,4 @@
 		{ "id":2, "text": "Servizio Lento", "count": 1 },
 		{ "id":3, "text": "Servizio Poco Professionale", "count": 0 }
 	]
-}
+}	

@@ -1,13 +1,13 @@
 { 
 	"id":2,
-	"name" : "Rosso Pomodoro", 
+	"name" : "Rosso Peperone", 
 	"address" : { 
-		"street" : "Via Sassari", 
-		"civic": "11-13", 
+		"street" : "Via Olbia", 
+		"civic": "11-15", 
 		"city":"Cagliari", 
 		"prov":"CA", 
 		"cap":"09124", 
-		"phone":"070 656060"
+		"phone":"070 654321"
 	},
 	"pro": 7,
 	"cons": 2,
