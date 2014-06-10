@@ -24,18 +24,17 @@
 				<div class='row'>
 					<div class='col-md-10'>
 						<div class='row'>
-							<div class='col-md-6'>
-								<div class='pull-left'>
-									<img src='http://placehold.it/80x80' class='img-circle' />
-								</div>
-								<div class=''>
-									<address>
-									  <strong class='text-muted'><a href='#/places/{{place.id}}'>{{place.name}}</a></strong><br>
-									  {{place.address.street}} <span ng-show='place.address.civic'>, {{place.address.civic}}</span><br>
-									  {{place.address.city}}, {{place.address.prov}} {{place.address.cap}}<br>
-									  <abbr title="Phone">P:</abbr> {{place.address.phone}}<br>
-									</address>
-								</div>
+
+							<div class="media col-md-8">
+								<a class="pull-left" href="#">
+									<img class="media-object img-circle" src="http://placehold.it/80x80" alt="...">
+								</a>
+								<article class="media-body">
+									<h1 class="h4 media-heading"><a href='#/places/{{place.id}}'>{{place.name}}</a></h1>
+									<p>{{place.address.street}} <span ng-show='place.address.civic'>, {{place.address.civic}}</span><br>
+									{{place.address.city}}, {{place.address.prov}} {{place.address.cap}}<br>
+									<abbr title="Phone">P:</abbr> {{place.address.phone}}</p>
+								</article>
 							</div>
 							<div class='col-md-2 text-center'>
 								<h5 class='text-muted'>PRO</h5>
