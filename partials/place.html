@@ -1,0 +1,43 @@
+<a href='#/'>indietro</a>
+
+<hr>
+
+<div class='row'>
+	<div class='col-md-6'>
+		<div class='pull-left'>
+			<img src='http://placehold.it/80x80' class='img-circle' />
+		</div>
+		<div class=''>
+			<address>
+			  <strong class='text-muted'><a href='#/places/{{place.id}}'>{{place.name}}</a></strong><br>
+			  {{place.address.street}} <span ng-show='place.address.civic'>, {{place.address.civic}}</span><br>
+			  {{place.address.city}}, {{place.address.prov}} {{place.address.cap}}<br>
+			  <abbr title="Phone">P:</abbr> {{place.address.phone}}<br>
+			</address>
+		</div>
+	</div>
+	<div class='col-md-2 text-center'>
+		<h5 class='text-muted'>PRO</h5>
+		<span class='badge'>{{pro()}}</span>
+	</div>
+	<div class='col-md-2 text-center'>
+		<h5 class='text-muted'>CONTRO</h5>
+		<span class='badge'>{{cons()}}</span>
+	</div>
+</div>
+
+<div class='row'>
+	<div class='col-md-6'>
+		<h5>Pro</h5>
+		<div class="list-group">
+		  <a class="list-group-item" ng-click="toggleVote(pro)" ng-class="{'list-group-item-success' : (pro.count > 0 && !pro.voted), 'list-group-item-info' : (pro.voted)}" ng-repeat="pro in place.prolist">{{pro.text}} <span ng-show='pro.count > 0' class='badge'>{{pro.count}}</span></a>
+		</div>
+	</div>
+	<div class='col-md-6'>
+		<h5>Contro</h5>
+		<div class="list-group">
+		  <a class="list-group-item" ng-click="toggleVote(cons)" ng-class="{'list-group-item-danger' : (cons.count > 0 && !cons.voted),'list-group-item-info':(cons.voted)}" ng-repeat="cons in place.conslist">{{cons.text}} <span ng-show='cons.count > 0' class='badge'>{{cons.count}}</span></a>
+		</div>
+	</div>
+</div>
+

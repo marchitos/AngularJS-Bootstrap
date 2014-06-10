@@ -1,0 +1,24 @@
+{ 
+	"id":4,
+	"name" : "Old Wild West", 
+	"address" : { 
+		"street" : "Piazza Unione Sarda", 
+		"city":"Cagliari", 
+		"prov":"CA", 
+		"cap":"09122", 
+		"phone":"070 2089054"
+	},
+	"pro": 3,
+	"cons": 5,
+	"prolist": [
+		{ "id":0, "text": "Cucina Ottima", "count": 1 },
+		{ "id":1, "text": "Bel Posto", "count": 0 },
+		{ "id":2, "text": "Servizio Veloce", "count": 2 }
+	],
+	"conslist": [
+		{ "id":0, "text": "Posto Sporco", "count": 1 },
+		{ "id":1, "text": "Piatti Sempre Freddi", "count": 3 },
+		{ "id":2, "text": "Servizio Lento", "count": 1 },
+		{ "id":3, "text": "Servizio Poco Professionale", "count": 0 }
+	]
+}

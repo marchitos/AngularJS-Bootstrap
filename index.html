@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app='lunchApp'>
+<head>
+	<title>Lunch O'Clock</title>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+	.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+	body { padding-top: 70px; }
+	</style>
+</head>
+<body>
+
+	<nav class="navbar  navbar-default navbar-fixed-top" role="navigation">
+	  <div class="container">
+	    <h3 class='text-success'>Lunch O&acute;Clock</h3>
+	  </div>
+	</nav>
+
+
+	<div class='container' ng-view>
+
+	</div>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+	<script type="text/javascript" src="js/ui-bootstrap-custom-0.10.0.min.js"></script>
+	
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/services/places.js"></script>
+	<script type="text/javascript" src="js/controllers/placesCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/placeCtrl.js"></script>
+	
+</body>
+</html>
