@@ -18,9 +18,10 @@
 
 <div class='row'>
 	<div class='col-md-12'>
-		<ul class='list-unstyled'>
-			<li class='active' ng-repeat="place in places | filter:filterText | orderBy:radioModel:orderDir">
-				<div class='panel row'>
+		<ul class='list-group'>
+			<li class='list-group-item' ng-repeat="place in places | filter:filterText | orderBy:radioModel:orderDir">
+
+				<div class='row'>
 					<div class='col-md-10'>
 						<div class='row'>
 							<div class='col-md-6'>
