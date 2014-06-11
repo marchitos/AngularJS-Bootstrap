@@ -1,16 +1,16 @@
 <div class='row'>
 	<div class='col-md-6'>
 		<div class="input-group">
-  			<span class="input-group-addon glyphicon glyphicon-search"></span>
-  			<input ng-model='filterText' type="text" class="form-control" placeholder="Filter">
+				<span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+				<input ng-model='filterText' type="text" class="form-control" placeholder="Filter">
 		</div>
 	</div>
 	<div class='col-md-6'>
 		<div class="btn-group pull-right">
-	        <label class="btn btn-success" ng-click="orderDir=true" ng-model="radioModel" btn-radio="'pro'" uncheckable>PRO</label>
-	        <label class="btn btn-success" ng-click="orderDir=true" ng-model="radioModel" btn-radio="'cons'" uncheckable>CONTRO</label>
-	        <label class="btn btn-success" ng-click="orderDir=false" ng-model="radioModel" btn-radio="'name'" uncheckable>NOME</label>
-	    </div>
+					<button class="btn btn-default" ng-click="orderDir=true" ng-model="radioModel" btn-radio="'pro'" uncheckable>PRO</button>
+					<button class="btn btn-default" ng-click="orderDir=true" ng-model="radioModel" btn-radio="'cons'" uncheckable>CONTRO</button>
+					<button class="btn btn-default" ng-click="orderDir=false" ng-model="radioModel" btn-radio="'name'" uncheckable>NOME</button>
+			</div>
 	</div>
 </div>
 
@@ -18,30 +18,30 @@
 
 <div class='row'>
 	<div class='col-md-12'>
-		<ul class='list-unstyled'>
-			<li class='active' ng-repeat="place in places | filter:filterText | orderBy:radioModel:orderDir">
-				<div class='panel row'>
+		<ul class='list-group'>
+			<li class='list-group-item' ng-repeat="place in places | filter:filterText | orderBy:radioModel:orderDir">
+
+				<div class='row'>
 					<div class='col-md-10'>
 						<div class='row'>
-							<div class='col-md-6'>
-								<div class='pull-left'>
-									<img src='http://placehold.it/80x80' class='img-circle' />
-								</div>
-								<div class=''>
-									<address>
-									  <strong class='text-muted'><a href='#/places/{{place.id}}'>{{place.name}}</a></strong><br>
-									  {{place.address.street}} <span ng-show='place.address.civic'>, {{place.address.civic}}</span><br>
-									  {{place.address.city}}, {{place.address.prov}} {{place.address.cap}}<br>
-									  <abbr title="Phone">P:</abbr> {{place.address.phone}}<br>
-									</address>
-								</div>
+
+							<div class="media col-md-8">
+								<a class="pull-left" href="#">
+									<img class="media-object img-circle" src="http://placehold.it/80x80" alt="...">
+								</a>
+								<article class="media-body">
+									<h1 class="h4 media-heading"><a href='#/places/{{place.id}}'>{{place.name}}</a></h1>
+									<p>{{place.address.street}} <span ng-show='place.address.civic'>, {{place.address.civic}}</span><br>
+									{{place.address.city}}, {{place.address.prov}} {{place.address.cap}}<br>
+									<abbr title="Phone">P:</abbr> {{place.address.phone}}</p>
+								</article>
 							</div>
 							<div class='col-md-2 text-center'>
-								<h5 class='text-muted'>PRO</h5>
+								<p class="h5 text-success">PRO</p>
 								<span class='badge'>{{place.pro}}</span>
 							</div>
 							<div class='col-md-2 text-center'>
-								<h5 class='text-muted'>CONTRO</h5>
+								<p class="h5 text-warning">CONTRO</p>
 								<span class='badge'>{{place.cons}}</span>
 							</div>
 						</div>
